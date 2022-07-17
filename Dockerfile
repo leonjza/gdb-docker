@@ -4,7 +4,7 @@ LABEL maintainer="@leonjza"
 
 RUN apt update && \
     apt install -y \
-        curl procps locales \
+        curl procps locales vim \
         python3-minimal python3-pip gdb binutils file \
     && \
     apt clean && \

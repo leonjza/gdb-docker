@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 
 LABEL maintainer="@leonjza"
 
@@ -18,7 +18,7 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 # gef deps
-RUN pip install keystone-engine unicorn capstone ropper
+RUN pip install pwntools keystone-engine unicorn capstone ropper
 
 VOLUME /data
 
